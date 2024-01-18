@@ -31,5 +31,5 @@ jobs:
 
     - name: Deploy to EC2
       run: |
-        rsync -avz --delete -e "ssh -o StrictHostKeyChecking=no" $GITHUB_WORKSPACE/ ubuntu@34.244.7.24:/home/ubuntu/demoaction/
+        rsync -avz  -e "ssh -o StrictHostKeyChecking=no" $GITHUB_WORKSPACE/ ubuntu@34.244.7.24:/home/ubuntu/demoaction/
 
